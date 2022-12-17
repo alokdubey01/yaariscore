@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: magero;
+  src: url(./fonts/Magero-Font/Magero.ttf);
+}
+@font-face {
+  font-family: Bahnschrift;
+  src: url(./fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+}
+body {
+  color: #111111;
+  font-family: Bahnschrift;
+}
+.primary-font {
+  font-family: Bahnschrift;
+}
+.secondary-font {
+  font-family: magero;
+}
+.app {
+  display: flex;
+  padding: 30px;
+}
