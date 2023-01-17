@@ -1,21 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Card.css";
-import img  from "../../static/2048.png";
+import { Link } from "react-router-dom";
 
-export const Card = () => {
+export const Card = (props) => {
   return (
     <div>
-      <a href="/Games/2048/app.html">
-        <div class="profile-card-2">
+      <Link to={props.link}>
+        <div className="profile-card-2">
           <img
-            src={img}
+            src={props.img}
             alt="game"
-            class="img img-responsive"
+            className="img img-responsive"
           />
-          <div class="profile-name">2048</div>
-          <div class="profile-username">@johndoesurname</div>
+          <div className="profile-name">{props.name}</div>
+          <div className="profile-username">{props.author}</div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

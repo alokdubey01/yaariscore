@@ -1,8 +1,18 @@
-.slick-prev{
-    left: 0;
-    z-index: 9;
+.slick-prev {
+  left: 0;
+  z-index: 9;
 }
-.slick-next{
-    z-index: 9;
-    right: 0;
+.slick-next {
+  z-index: 9;
+  right: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-prev:before {
+  margin-left: 10px;
+}
+.slick-next:before {
+  margin-left: -15px;
 }
