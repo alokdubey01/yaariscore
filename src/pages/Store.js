@@ -18,6 +18,8 @@ export const Store = () => {
       <Card link="/games/maze" name="The Maze" author="@johndoesurname" img={twenty48}/>
       <Card link="/games/pong" name="Ping Pong" author="@johndoesurname" img={twenty48}/>
       <Card link="/games/tetris" name="Tetris" author="@johndoesurname" img={twenty48}/>
+      <Card link="/games/redball" name="Red Ball" author="@johndoesurname" img={twenty48}/>
+      <Card link="/games/memoryit" name="Memory It" author="@johndoesurname" img={twenty48}/>
       </div>
     </div>
     </div>

@@ -16,6 +16,8 @@ import Maze from "./games/Maze";
 import Pong from "./games/Maze";
 import Tetris from "./games/Tetris";
 import Login from "./pages/Login";
+import RedBall from "./games/RedBall";
+import MemoryIt from "./games/MemoryIt";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
             <Route path="/games/maze" element={<Maze />} />
             <Route path="/games/pong" element={<Pong />} />
             <Route path="/games/tetris" element={<Tetris />} />
+            <Route path="/games/redball" element={<RedBall />} />
+            <Route path="/games/memoryit" element={<MemoryIt />} />
           </Route>
         </Routes>
       </Router>
