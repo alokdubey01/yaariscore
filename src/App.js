@@ -18,6 +18,7 @@ import Tetris from "./games/Tetris";
 import Login from "./pages/Login";
 import RedBall from "./games/RedBall";
 import MemoryIt from "./games/MemoryIt";
+import Astray from "./games/Astray";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/games/tetris" element={<Tetris />} />
             <Route path="/games/redball" element={<RedBall />} />
             <Route path="/games/memoryit" element={<MemoryIt />} />
+            <Route path="/games/astray" element={<Astray />} />
           </Route>
         </Routes>
       </Router>

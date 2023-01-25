@@ -6,8 +6,8 @@ export default function RedBall() {
       <iframe
         style={{ width: "100%", height: "100vh", margin: 0, padding: 0 }}
         title="cube"
-        src="http://localhost:8000/red-ball"
-        // src="https://yaariscore.azurewebsites.net/tetris"
+        // src="http://localhost:8000/red-ball"
+        src="https://yaariscore.azurewebsites.net/red-ball"
       />
     </div>
   );
