@@ -15,6 +15,7 @@ import Tower from "./games/Tower";
 import Maze from "./games/Maze";
 import Pong from "./games/Maze";
 import Tetris from "./games/Tetris";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
 
           {/* Without Navbar */}
           <Route element={<WithoutNav />}>
+            <Route path="/login" element={<Login/>}/>
+            {/* Games path are below */}
             <Route path="/games/cube" element={<Cube />} />
             <Route path="/games/2048" element={<Twenty48 />} />
             <Route path="/games/car" element={<Car />} />

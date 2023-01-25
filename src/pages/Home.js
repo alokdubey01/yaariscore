@@ -4,9 +4,6 @@ import { Collections } from '../components/Home/Collections'
 import { Container } from '../components/Home/Container'
 import { Creaters } from '../components/Home/Creaters'
 import img from '../static/wepik.png'
-import {GiAtomicSlashes} from 'react-icons/gi'
-import {HiChatBubbleBottomCenterText} from 'react-icons/hi2'
-import {IoIosSwitch} from 'react-icons/io'
 
 export const Home = () => {
   return (

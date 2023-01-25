@@ -19,7 +19,7 @@ export const Navbar = () => {
                 <ul className='flex gap-6 items-center'>
                 <li className='primary-font uppercase text-md'><BsSearch/></li>
                 <li className='primary-font uppercase text-lg'><BiWorld/></li>
-                <li className='primary-font uppercase text-lg flex items-center'><BiUser className='mr-2'/> <p className='font-[400] primary-font uppercase text-xs' style={{letterSpacing: '2px'}}>sign in</p></li>
+                <Link to='/login' className='primary-font uppercase text-lg flex items-center'><BiUser className='mr-2'/> <p className='font-[400] primary-font uppercase text-xs' style={{letterSpacing: '2px'}}>sign in</p></Link>
                 <li className='primary-font uppercase text-xs flex items-center bg-gradient-to-r from-[#338EEE] to-[#33BAFC] p-2'>download</li>
                 </ul>
             </div>

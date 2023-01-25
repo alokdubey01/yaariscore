@@ -1,12 +1,13 @@
 .profile-card-2 {
     max-width: 200px;
-    background-color: #FFF;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-color: #e1e1e1;
+    /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); */
     background-position: center;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .profile-card-2 img {
