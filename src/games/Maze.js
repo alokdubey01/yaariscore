@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function Maze() {
+  const [data, loading] = React.useFetch(
+    "https://yaariscore.azurewebsites.net/aviator"
+  ); 
+  console.log(data)
   return (
     <div>
     <iframe

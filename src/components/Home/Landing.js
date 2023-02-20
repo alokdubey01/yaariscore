@@ -1,31 +1,31 @@
 import React from "react";
 import { BiDownArrowAlt } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
-import IconButton from "@mui/material/IconButton";
+// import IconButton from "@mui/material/IconButton";
 
 export const Landing = () => {
-  const [open, setOpen] = React.useState(true);
+  // const [open, setOpen] = React.useState(true);
 
-  const handleClose = (
-    event: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
-    if (reason === "clickaway") {
-      return;
-    }
+  // const handleClose = (
+  //   event: React.SyntheticEvent | Event,
+  //   reason?: string
+  // ) => {
+  //   if (reason === "clickaway") {
+  //     return;
+  //   }
 
-    setOpen(false);
-  };
+  //   setOpen(false);
+  // };
 
-  const action = (
-    <React.Fragment>
-      <Button color="secondary" size="small" onClick={handleClose}>
-        UNDO
-      </Button>
-    </React.Fragment>
-  );
+  // const action = (
+  //   <React.Fragment>
+  //     <Button color="secondary" size="small" onClick={handleClose}>
+  //       UNDO
+  //     </Button>
+  //   </React.Fragment>
+  // );
 
   const navigate = useNavigate();
   const store = () => {
@@ -52,16 +52,16 @@ export const Landing = () => {
             play games
           </div>
           <div className="capitalize flex items-center border border-gray-300 py-2 px-6 text-sm rounded-md w-42 cursor-pointer hover:bg-gray-100">
-            <BiDownArrowAlt className="mr-1 h-4 w-4" /> dowload
+            <BiDownArrowAlt className="mr-1 h-4 w-4" /> download
           </div>
         </div>
       </div>
-      <Snackbar
+      {/* <Snackbar
         open={open}
         autoHideDuration={6000}
         message="site is under maintenance"
         action={action}
-      />
+      /> */}
     </div>
   );
 };
