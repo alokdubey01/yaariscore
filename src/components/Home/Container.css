@@ -1,0 +1,142 @@
+.card-content:not(:empty):hover,
+.card-content:not(:empty):focus {
+  z-index: 1;
+  color: #fff;
+  background: #ea124f;
+  opacity: 1;
+  transform: scale(1.15) rotateZ(20deg);
+  cursor: pointer;
+}
+.card-content:not(:empty):hover:after,
+.card-content:not(:empty):focus:after {
+  opacity: 1;
+}
+.card-content:not(:empty):hover:before,
+.card-content:not(:empty):focus:before {
+  opacity: 0;
+}
+.card-content {
+  padding: 10px;
+  background: rgb(51 65 85);
+  border-radius: 0.7em;
+  opacity: 0.6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: background, transform, color, opacity;
+}
+
+.card-content:empty {
+  opacity: 0.3;
+}
+/* .card-content:before, .card-content:after {
+  content: "";
+  position: absolute;
+  border-radius: 0.7em;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+} */
+.card-content h2::after {
+    display: none;
+  }
+/* .card-content:after {
+  box-shadow: -20px 20px 12px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+} */
+
+/* --------- Grid ---------- */
+.grids {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.item1 {
+  grid-area: 1/1/3/3;
+}
+
+.item2 {
+  grid-area: 3/3/4/4;
+}
+.item2.card-content:hover, .item2.card-content:focus {
+  background: #00005c;
+}
+
+.item3 {
+  grid-area: 4/1/5/4;
+}
+
+.item4 {
+  grid-area: 1/3/2/5;
+}
+
+.item5 {
+  grid-area: 2/4/3/5;
+}
+
+.item6 {
+  grid-area: 3/4/4/5;
+}
+
+.item7 {
+  grid-area: 3/4/5/5;
+}
+
+.item8 {
+  grid-area: 1/5/2/6;
+}
+.item8.card-content:hover, .item8.card-content:focus {
+  background: #f57b51;
+}
+
+.item9 {
+  grid-area: 2/5/3/6;
+}
+
+.item10 {
+  grid-area: 3/5/4/6;
+}
+
+.item11 {
+  grid-area: 4/5/5/6;
+}
+.item11.card-content:hover, .item11.card-content:focus {
+  background: #00a8cc;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --------- Responsive ---------- */
+@media only screen and (max-width: 600px) {
+  .grids {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, minmax(auto, 300px));
+    overflow-y: scroll;
+  }
+
+  .item1 {
+    grid-area: 1/1/2/3;
+  }
+
+  .card-content {
+    grid-area: auto;
+    text-align: left;
+  }
+  .card-content:empty {
+    display: none;
+  }
+}

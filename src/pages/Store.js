@@ -10,7 +10,7 @@ export const Store = () => {
       <div className="mt-12 z-20 relative">
         <Corousel />
 
-        <div className="text-xs mt-12 mx-auto uppercase ml-4">trending</div>
+        {/* <div className="text-xs mt-12 mx-auto uppercase ml-4">trending</div>
         <div className="text-lg font-medium mt-2 mx-auto ml-4">
           #Play With Valorant
         </div>
@@ -34,54 +34,47 @@ export const Store = () => {
               <polyline points="16 15 12 19 8 15" />
             </svg>
           </div>
-          {/* <select
-            className="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10"
-          >
-            <option onClick={() => setActiveStatus(1)} className="text-sm text-gray-600">Top Stream </option>
-            <option onClick={() => setActiveStatus(2)} className="text-sm text-gray-600">Currently Online </option>
-            <option onClick={() => setActiveStatus(3)} className="text-sm text-gray-600">Verified</option>
-          </select> */}
         </div>
-        <div className="justify-between flex-wrap sm:block bg-white rounded">
+        <div className="justify-between flex-wrap sm:block rounded">
           <div className="xl:w-full xl:mx-0 pl-5 pr-5 h-12">
             <ul className="flex">
               <li
                 onClick={() => setActiveStatus(1)}
                 className={
                   activeStatus === 1
-                    ? "text-sm text-indigo-700 flex flex-col justify-between border-indigo-700 pt-1 rounded-t mr-6 font-normal"
-                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-gray-800"
+                    ? "text-sm text-red-700 flex flex-col justify-between border-red-700 pt-1 rounded-t mr-6 font-normal"
+                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-slate-500"
                 }
               >
                 <span className="mb-1 cursor-pointer">Top Stream</span>
                 {activeStatus === 1 && (
-                  <div className="w-full h-0.5 bg-indigo-700 rounded-t-md" />
+                  <div className="w-full h-0.5 bg-red-700 rounded-t-md" />
                 )}
               </li>
               <li
                 onClick={() => setActiveStatus(2)}
                 className={
                   activeStatus === 2
-                    ? "text-sm text-indigo-700 flex flex-col justify-between border-indigo-700 pt-1 rounded-t mr-6 font-normal"
-                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-gray-800"
+                    ? "text-sm text-red-700 flex flex-col justify-between border-indigo-700 pt-1 rounded-t mr-6 font-normal"
+                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-slate-500"
                 }
               >
                 <span className="mb-1 cursor-pointer">Currently Online</span>
                 {activeStatus === 2 && (
-                  <div className="w-full h-0.5 bg-indigo-700 rounded-t-md" />
+                  <div className="w-full h-0.5 bg-red-700 rounded-t-md" />
                 )}
               </li>
               <li
                 onClick={() => setActiveStatus(3)}
                 className={
                   activeStatus === 3
-                    ? "text-sm text-indigo-700 flex flex-col justify-between border-indigo-700 pt-1 rounded-t mr-6 font-normal"
-                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-gray-800"
+                    ? "text-sm text-red-700 flex flex-col justify-between border-red-700 pt-1 rounded-t mr-6 font-normal"
+                    : "text-sm text-gray-600 py-1 mr-6 font-normal cursor-pointer hover:text-slate-500"
                 }
               >
                 <span className="mb-1 cursor-pointer">Verified</span>
                 {activeStatus === 3 && (
-                  <div className="w-full h-0.5 bg-indigo-700 rounded-t-md" />
+                  <div className="w-full h-0.5 bg-red-700 rounded-t-md" />
                 )}
               </li>
             </ul>
@@ -131,7 +124,7 @@ export const Store = () => {
                 />
               </div>
               <div className="relative text-white px-6 pb-6 mt-5">
-                {/* <span className="block opacity-75 -mb-1">Indoor</span> */}
+                // <span className="block opacity-75 -mb-1">Indoor</span>
                 <div className="flex justify-between">
                   <span className="block font-semibold text-xl">
                     Peace Lily
@@ -183,7 +176,7 @@ export const Store = () => {
                 />
               </div>
               <div className="relative text-white px-6 pb-6 mt-5">
-                {/* <span className="block opacity-75 -mb-1">Outdoor</span> */}
+                // <span className="block opacity-75 -mb-1">Outdoor</span>
                 <div className="flex justify-between">
                   <span className="block font-semibold text-xl">Monstera</span>
                   <span className="block bg-white rounded-full text-teal-500 text-xs font-bold px-5 py-0.5 leading-none flex items-center cursor-pointer">
@@ -229,7 +222,7 @@ export const Store = () => {
                 <img className="relative w-32 -m-3 -mt-6" src={Cube} alt="" />
               </div>
               <div className="relative text-white px-6 pb-6 mt-5">
-                {/* <span className="block opacity-75 -mb-1">Outdoor</span> */}
+                // <span className="block opacity-75 -mb-1">Outdoor</span>
                 <div className="flex justify-between">
                   <span className="block font-semibold text-xl">Oak Tree</span>
                   <span className="block bg-white rounded-full text-purple-500 text-xs font-bold px-5 py-0.5 leading-none flex items-center cursor-pointer">
@@ -239,7 +232,7 @@ export const Store = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="md:p-4 mt-12 mx-auto items-center justify-between">
           <Card />

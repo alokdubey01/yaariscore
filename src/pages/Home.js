@@ -10,10 +10,10 @@ export const Home = () => {
     <div>
       <Landing />
       <Tournament/>
-      <div className="secondary-font text-gray-800 text-4xl w-1/2 text-center mt-20 mx-auto uppercase relative">
+      <div className="secondary-font text-slate-400 text-4xl w-1/2 text-center mt-20 mx-auto uppercase relative">
         play without limits
       </div>
-      <p className="text-center items-center mt-6 text-gray-600 w-1/2 mx-auto">
+      <p className="text-center items-center mt-6 text-gray-500 w-1/2 mx-auto">
         Yariscore.me gives you to play games into your browser without
         downloading it, You can play solo games as well multiplayer games with
         your friends so take a look and enjoy without worry.

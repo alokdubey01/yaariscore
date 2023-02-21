@@ -8,11 +8,11 @@ export const Share = () => {
   return (
     <div className="mt-6 lg:container lg:mx-auto lg:py-6 md:py-12 md:px-6 py-2 px-4">
       <div className="flex">
-        <div className="bg-[#edf75c] h-auto w-9/12 pt-16 pl-16 pb-6 rounded-tl-xl rounded-bl-xl">
-          <div className="text-3xl w-72 font-semibold leading-10">
+        <div className="bg-[#b8c410] h-auto w-9/12 pt-16 pl-16 pb-6 rounded-tl-xl rounded-bl-xl">
+          <div className="text-3xl w-72 text-slate-700 font-semibold leading-10">
             The best kind of friendship is playing together!
           </div>
-          <div className="text-sm w-7/12 font-normal mt-4">
+          <div className="text-sm text-slate-600 w-7/12 font-normal mt-4">
             We are excited to announce that our new game is now available and we
             would love for you to come join us! Our game is a great way to have
             fun with friends, so why not invite them to come along too?

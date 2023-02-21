@@ -10,7 +10,7 @@ export const Help = () => {
     <div className="mt-12 lg:container lg:mx-auto lg:py-12 md:py-12 md:px-6 py-2 px-4">
       <div className=" md:mb-0 mb-8 md:text-left text-center">
       <div className="text-center text-3xl font-bold">Search for Questions</div>
-        <p className="text-center font-normal text-sm text-gray-600 mt-4 sm:w-2 md:w-auto sm:m-auto">
+        <p className="text-center font-normal text-sm text-slate-400 mt-4 sm:w-2 md:w-auto sm:m-auto">
           If you don’t find your answer, Please contact us or Leave a Message,
           we’ll be more than happy to assist you.
         </p>
@@ -131,7 +131,7 @@ export const Help = () => {
       </div>
 
       <div>
-        <div className="text-center text-xl mt-6">
+        <div className="text-center text-white text-xl mt-6">
           <b>Quick</b> Answers
         </div>
 
@@ -145,9 +145,9 @@ export const Help = () => {
                 id="mainHeading"
                 className="flex justify-between items-center w-full"
               >
-                <div className=" ">
-                  <p className="flex justify-center items-center font-medium text-base leading-6 md:leading-4 text-gray-800">
-                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                <div>
+                  <p className="flex justify-center items-center font-medium text-base leading-6 md:leading-4 text-gray-50">
+                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-50">
                       Q1.
                     </span>
                     How do i know if a product is available in boutiques?
@@ -155,12 +155,13 @@ export const Help = () => {
                 </div>
                 <button
                   aria-label="toggler"
-                  className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 outline-none border-none"
                   onClick={() => setOpen(!open)}
                 >
                   <svg
                     className={
                       "transform " + (open ? "rotate-180" : "rotate-0")
+                      
                     }
                     width="24"
                     height="24"
@@ -170,7 +171,7 @@ export const Help = () => {
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke="black"
+                      stroke="white"
                       strokeWidth="1.33333"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -182,7 +183,7 @@ export const Help = () => {
                 id="menu"
                 className={"mt-6 w-full " + (open ? "block" : "hidden")}
               >
-                <p className="text-base leading-6 text-gray-600 font-normal">
+                <p className="text-base leading-6 text-gray-400 font-normal">
                   Remember you can query the status of your orders any time in
                   My orders in the My account section. if you are not resigered
                   at Mango.com, you can access dierectly in the Orders section.
@@ -202,9 +203,9 @@ export const Help = () => {
                 className="flex justify-between items-center w-full"
               >
                 <div className="">
-                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-50">
                     
-                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-50">
                       Q2.
                     </span>
                     How can i find the prices or get other information about
@@ -228,7 +229,7 @@ export const Help = () => {
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke="black"
+                      stroke="white"
                       strokeWidth="1.33333"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -240,7 +241,7 @@ export const Help = () => {
                 id="menu"
                 className={"mt-6 w-full " + (open2 ? "block" : "hidden")}
               >
-                <p className="text-base leading-6 text-gray-600 font-normal">
+                <p className="text-base leading-6 text-gray-400 font-normal">
                   Remember you can query the status of your orders any time in
                   My orders in the My account section. if you are not resigered
                   at Mango.com, you can access dierectly in the Orders section.
@@ -260,9 +261,9 @@ export const Help = () => {
                 className="flex justify-between items-center w-full"
               >
                 <div className="">
-                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-50">
                     
-                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-50">
                       Q3.
                     </span>
                     How many collections come out every year?
@@ -285,7 +286,7 @@ export const Help = () => {
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke="black"
+                      stroke="white"
                       strokeWidth="1.33333"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -297,7 +298,7 @@ export const Help = () => {
                 id="menu"
                 className={"mt-6 w-full " + (open3 ? "block" : "hidden")}
               >
-                <p className="text-base leading-6 text-gray-600 font-normal">
+                <p className="text-base leading-6 text-gray-400 font-normal">
                   Remember you can query the status of your orders any time in
                   My orders in the My account section. if you are not resigered
                   at Mango.com, you can access dierectly in the Orders section.
@@ -317,9 +318,9 @@ export const Help = () => {
                 className="flex justify-between items-center w-full"
               >
                 <div className="">
-                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-50">
                     
-                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-50">
                       Q4.
                     </span>
                     Are all of the fashion collections features on the website?
@@ -342,7 +343,7 @@ export const Help = () => {
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke="black"
+                      stroke="white"
                       strokeWidth="1.33333"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -354,7 +355,7 @@ export const Help = () => {
                 id="menu"
                 className={"mt-6 w-full " + (open4 ? "block" : "hidden")}
               >
-                <p className="text-base leading-6 text-gray-600 font-normal">
+                <p className="text-base leading-6 text-gray-400 font-normal">
                   Remember you can query the status of your orders any time in
                   My orders in the My account section. if you are not resigered
                   at Mango.com, you can access dierectly in the Orders section.
@@ -374,9 +375,9 @@ export const Help = () => {
                 className="flex justify-between items-center w-full"
               >
                 <div className="">
-                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                  <p className="flex justify-center items-center font-medium text-base leading-6 lg:leading-4 text-gray-50">
                     
-                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                    <span className="  lg:mr-6 mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-50">
                       Q5.
                     </span>
                     Where do i find products that i have seen in magazines or
@@ -400,7 +401,7 @@ export const Help = () => {
                   >
                     <path
                       d="M6 9L12 15L18 9"
-                      stroke="black"
+                      stroke="white"
                       strokeWidth="1.33333"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -412,7 +413,7 @@ export const Help = () => {
                 id="menu"
                 className={"mt-6 w-full " + (open5 ? "block" : "hidden")}
               >
-                <p className="text-base leading-6 text-gray-600 font-normal">
+                <p className="text-base leading-6 text-gray-400 font-normal">
                   Remember you can query the status of your orders any time in
                   My orders in the My account section. if you are not resigered
                   at Mango.com, you can access dierectly in the Orders section.

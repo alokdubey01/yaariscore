@@ -11,8 +11,10 @@
   src: url(./fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
 }
 body {
-  color: #111111;
+  /* color: #111111; */
+  color: #c6c6c6;
   font-family: Bahnschrift;
+  background: #24282f;
 }
 .primary-font {
   font-family: Bahnschrift;
